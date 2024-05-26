@@ -23,4 +23,7 @@ cd Bigdata-Movie-Recommendation
 
 # Execute the Recommender Engine
 hadoop jar Recommender_Engine/recommender.jar Driver /data_path /dataDividedByUser /coOccurrenceMatrix /Normalize /Multiplication /Sum /RecommendationList
+
+# Copy output file to local
+hadoop fs -get / ~/Bigdata-Movie-Recommendation/output
 ``` 
