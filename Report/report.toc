@@ -13,7 +13,7 @@
 \contentsline {section}{\numberline {3.1}Ý tưởng MapReduce Item-based Collaborative Filtering}{9}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Lưu đồ của thuật toán MapReduce Item-based Collaborative Filtering}{9}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Triển khai thuật toán MapReduce Item-based Collaborative Filtering}{10}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Demo thuật toán MapReduce Item-based Collaborative Filtering}{11}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Demo thuật toán MapReduce Item-based Collaborative Filtering}{12}{section.3.4}%
 \contentsline {chapter}{\numberline {4}KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN}{14}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Kết luận}{14}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Hướng phát triển}{14}{section.4.2}%

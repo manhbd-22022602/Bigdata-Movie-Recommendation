@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1716819389.98796 "c:/Users/levie/OneDrive/Documents/Python/Report/report.tex" "report.pdf" "report" 1716819391.65287 0
+["pdflatex"] 1716822135.64293 "c:/Users/levie/OneDrive/Documents/Python/Report/report.tex" "report.pdf" "report" 1716822136.91721 0
   "c:/Users/levie/.texlive2024/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1716700026 11524 eb0e50ef86be9ddf06445309ecacb1b6 ""
-  "c:/Users/levie/OneDrive/Documents/Python/Report/report.tex" 1716819389 33120 95a71f93fec17b76dcd1bc98689dc29a ""
+  "c:/Users/levie/OneDrive/Documents/Python/Report/report.tex" 1716821778 500 ce70f752d1aea14e20ca17851e30321b ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1716647612 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1716647531 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1716647583 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
@@ -92,6 +92,12 @@
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1716653420 87283 f149502d57f226b3abaa8ca435ff02bd ""
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1716648033 6865536 1574da748a66f2458e3e94b596e42cbe ""
   "c:/texlive/2024/texmf.cnf" 1716648008 713 e69b156964470283e0530f5060668171 ""
+  "chapters/beginning.tex" 1716821865 3146 5a28906e4aba818a29c666f48e6444f9 ""
+  "chapters/chapter1.tex" 1716821486 7383 750963740a443c33286978792d4f739d ""
+  "chapters/chapter2.tex" 1716821937 7495 d78369dddf5f91192e5a64e65b09dab9 ""
+  "chapters/chapter3.tex" 1716822133 9886 2bbd5b8fa4212c0fd0fb0217e94a9b5f ""
+  "chapters/chapter4.tex" 1716821765 2363 b277bbcbf37789a9c7e7b522dd464903 ""
+  "chapters/end.tex" 1716821775 2634 7cb39dee5eceb56628ce483192dea097 ""
   "images/BigData.jpg" 1716700546 55130 b98d7e90472bb72d0fecf0b572a1c277 ""
   "images/Demo1.png" 1716741517 32361 10693cfecb0fd9aa805f82a4a345624a ""
   "images/Demo2.png" 1716742378 20255 312778927cf77a30b872201a3d597a0e ""
@@ -101,10 +107,10 @@
   "images/Hadoop2.jpg" 1716700579 19809 c2ebeb3a451dd778c527365549f59917 ""
   "images/MapReduce.png" 1716702680 113997 e91f7f9f12e912954a689c064f5f9c59 ""
   "images/RecommenderSystem.png" 1716472128 35189 1d4c63fb2594f8c88b04b6f70e84ad9d ""
-  "report.aux" 1716819391 4956 798a5892073190a3e94f43bd78c147ad "pdflatex"
-  "report.out" 1716819391 5197 1af221e6f66acfcf37f8e4183995307a "pdflatex"
-  "report.tex" 1716819389 33120 95a71f93fec17b76dcd1bc98689dc29a ""
-  "report.toc" 1716819391 2085 ce468674fb59f2778b2c3848eddf49d9 "pdflatex"
+  "report.aux" 1716822136 4956 1fb1ff925db7146467f3f565de7999cc "pdflatex"
+  "report.out" 1716822136 5197 1af221e6f66acfcf37f8e4183995307a "pdflatex"
+  "report.tex" 1716821778 500 ce70f752d1aea14e20ca17851e30321b ""
+  "report.toc" 1716822136 2085 fcf145677628c5bc88fdf3c0389a2016 "pdflatex"
   (generated)
   "report.aux"
   "report.log"
