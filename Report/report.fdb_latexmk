@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1716823329.24196 "c:/Users/levie/OneDrive/Documents/Python/Report/report.tex" "report.pdf" "report" 1716823330.41086 0
+["pdflatex"] 1716825293.96036 "c:/Users/levie/OneDrive/Documents/Python/Report/report.tex" "report.pdf" "report" 1716825295.3176 0
   "c:/Users/levie/.texlive2024/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1716700026 11524 eb0e50ef86be9ddf06445309ecacb1b6 ""
-  "c:/Users/levie/OneDrive/Documents/Python/Report/report.tex" 1716821778 500 ce70f752d1aea14e20ca17851e30321b ""
+  "c:/Users/levie/OneDrive/Documents/Python/Report/report.tex" 1716825266 502 363193fe7633ac4ee7f97432fadb0c25 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1716647612 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1716647531 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1716647583 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
@@ -92,7 +92,7 @@
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1716653420 87283 f149502d57f226b3abaa8ca435ff02bd ""
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1716648033 6865536 1574da748a66f2458e3e94b596e42cbe ""
   "c:/texlive/2024/texmf.cnf" 1716648008 713 e69b156964470283e0530f5060668171 ""
-  "chapters/beginning.tex" 1716821865 3146 5a28906e4aba818a29c666f48e6444f9 ""
+  "chapters/beginning.tex" 1716825292 3146 c76e5d571a2ac9fb41d4fb84967c9734 ""
   "chapters/chapter1.tex" 1716821486 7383 750963740a443c33286978792d4f739d ""
   "chapters/chapter2.tex" 1716821937 7495 d78369dddf5f91192e5a64e65b09dab9 ""
   "chapters/chapter3.tex" 1716823327 9903 568279af0c072040564fb83bc3c25bf2 ""
@@ -107,10 +107,10 @@
   "images/Hadoop2.jpg" 1716700579 19809 c2ebeb3a451dd778c527365549f59917 ""
   "images/MapReduce.png" 1716702680 113997 e91f7f9f12e912954a689c064f5f9c59 ""
   "images/RecommenderSystem.jpg" 1716823075 41619 22b158bcfa95be6182f17b95d94a53d7 ""
-  "report.aux" 1716823330 4956 1fb1ff925db7146467f3f565de7999cc "pdflatex"
-  "report.out" 1716823330 5197 1af221e6f66acfcf37f8e4183995307a "pdflatex"
-  "report.tex" 1716821778 500 ce70f752d1aea14e20ca17851e30321b ""
-  "report.toc" 1716823330 2085 fcf145677628c5bc88fdf3c0389a2016 "pdflatex"
+  "report.aux" 1716825295 4960 8e02189829169b41a3b88f8bab2bc33a "pdflatex"
+  "report.out" 1716825295 5197 1af221e6f66acfcf37f8e4183995307a "pdflatex"
+  "report.tex" 1716825266 502 363193fe7633ac4ee7f97432fadb0c25 ""
+  "report.toc" 1716825295 2088 17238c05b051275e6967d9b2da17f6d5 "pdflatex"
   (generated)
   "report.aux"
   "report.log"
