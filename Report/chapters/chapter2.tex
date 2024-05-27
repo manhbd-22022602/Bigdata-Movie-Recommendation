@@ -1,0 +1,156 @@
+% Chapter 2
+\chapter[XÂY DỰNG HỆ THỐNG GỢI Ý PHIM BẰNG THUẬT TOÁN ITEM-BASED COLLABORATIVE FILTERING]
+ {\LARGE XÂY DỰNG HỆ THỐNG GỢI Ý PHIM BẰNG THUẬT TOÁN ITEM-BASED COLLABORATIVE FILTERING}
+
+% Section 1 Chapter 2
+\section{Giới thiệu thuật toán}
+Thuật toán Item - based Collaborative Filtering (CF) là một phương pháp
+phổ biến trong hệ thống gợi ý, được sử dụng để đưa ra các đề xuất cá nhân
+hóa cho người dùng.
+\vspace{0.5cm}
+\newline
+Thuật toán này phân tích ma trận người dùng - sản phẩm
+để xác định mối quan hệ giữa các sản phẩm khác nhau và sau đó sử dụng các
+mối quan hệ này để tính toán gián tiếp các đề xuất cho người dùng.
+\vspace{0.5cm}
+\newline
+Phương pháp này giúp cải thiện hiệu quả và chất lượng của hệ thống
+gợi ý so với các thuật toán CF dựa trên người dùng.
+
+% Section 2 Chapter 2
+\section{Triển khai thuật toán}
+Triển khai thuật toán Item - based Collaborative Filtering
+bao gồm các bước chính sau đây:
+
+\subsection*{Bước 1: Xây dựng ma trận đồng xuất hiện}
+Tạo ra ma trận đồng xuất hiện C kích thước n x n, trong đó
+C[i][j] là số lượng người dùng đã đánh giá cả sản phẩm i và j.
+
+\subsection*{Bước 2: Chuẩn hóa ma trận}
+Tạo ra ma trận chuẩn hóa S kích thước n x n, trong đó: \\
+$$S[i][j] = \frac{C[i][j]}{\sum_{m \in M}C[m][j]}$$ \\
+Trong đó M là tập hợp tất cả các sản phẩm.
+
+\subsection*{Bước 3: Xây dựng ma trận đánh giá}
+Tạo ra ma trận đánh giá R kích thước n x m, trong đó: \\
+$$R[i][j] = \sum_{m \in M}S[i][m] \times U[m][j]$$ \\
+Trong đó M là tập hợp tất cả các sản phẩm và thay $U[i][j]=?$ thành $U[i][j]=0$
+
+\subsection*{Bước 4: Triển khai với Hadoop MapReduce}
+Để triển khai thuật toán này trên một tập dữ liệu lớn, chúng ta sử dụng
+Hadoop MapReduce để phân chia và xử lý dữ liệu song song. Quá trình triển khai
+bao gồm các bước sau:
+\pagebreak
+\begin{itemize}
+    \item \textbf{Mapper}: Đọc vào các cặp key/value biểu diễn dữ liệu
+          người dùng - sản phẩm, tính toán các cặp sản phẩm tương tự và
+          lưu trữ các kết quả trung gian.
+    \item \textbf{Reducer}: Tập hợp các kết quả từ Mapper, tính toán
+          độ tương đồng giữa các sản phẩm và tổng hợp các dự đoán cuối cùng.
+\end{itemize}
+
+% Section 3 Chapter 2
+\raggedright
+\section{Ví dụ minh họa thuật toán}
+Để minh họa cho quá trình hoạt động của thuật toán CF dựa trên Item,
+chúng ta xem xét một ví dụ đơn giản:\\
+\vspace{0.5cm}
+\textbf{Dữ liệu đầu vào}: Ma trận người dùng -
+sản phẩm với các đánh giá từ 1 - 5. (? là sản phẩm mà người dùng đó chưa đánh giá)\\
+\renewcommand{\arraystretch}{2}
+{\centering
+    \begin{tabular}{ |c|c|c|c|c| }
+        \hline
+                     & Sản phẩm 1 & Sản phẩm 2 & Sản phẩm 3 & Sản phẩm 4 \\
+        \hline
+        Người dùng A & 5          & 3          & ?          & 4          \\
+        \hline
+        Người dùng B & 3          & ?          & 2          & 3          \\
+        \hline
+        Người dùng C & 4          & ?          & 4          & ?          \\
+        \hline
+        Người dùng D & ?          & 3          & ?          & 5          \\
+        \hline
+        Người dùng E & ?          & ?          & ?          & ?          \\
+        \hline
+    \end{tabular}
+    \par}
+
+\subsection*{Bước 1: Xây dựng ma trận đồng xuất hiện}
+Dựa trên dữ liệu đầu vào, chúng ta xây dựng ma trận đồng xuất hiện C như sau:
+(Ví dụ ta thấy rằng có 2 người cùng đánh giá sản phẩm 1 và 3 là Người dùng B và C
+nên $C[1][3] = C[3][1] = 2$)\\
+\vspace{0.2cm}
+{\centering
+    \begin{tabular}{ |c|c|c|c|c| }
+        \hline
+                   & Sản phẩm 1 & Sản phẩm 2 & Sản phẩm 3 & Sản phẩm 4 \\
+        \hline
+        Sản phẩm 1 & 3          & 1          & 2          & 2          \\
+        \hline
+        Sản phẩm 2 & 1          & 2          & 0          & 2          \\
+        \hline
+        Sản phẩm 3 & 2          & 0          & 2          & 1          \\
+        \hline
+        Sản phẩm 4 & 2          & 2          & 1          & 3          \\
+        \hline
+    \end{tabular}
+    \par}
+
+\subsection*{Bước 2: Chuẩn hóa ma trận}
+Dựa trên ma trận C, chúng ta chuẩn hóa thành ma trận S như sau:
+(Tổng cột sản phẩm 1 là 8 nên $S[1][1] = \frac{C[1][1]}{8} = \frac{3}{8} = 0.375$)\\
+\vspace{0.2cm}
+{\centering
+    \begin{tabular}{ |c|c|c|c|c| }
+        \hline
+                   & Sản phẩm 1 & Sản phẩm 2 & Sản phẩm 3 & Sản phẩm 4 \\
+        \hline
+        Sản phẩm 1 & 0.375      & 0.2        & 0.4        & 0.25       \\
+        \hline
+        Sản phẩm 2 & 0.125      & 0.4        & 0          & 0.25       \\
+        \hline
+        Sản phẩm 3 & 0.25       & 0          & 0.4        & 0.125      \\
+        \hline
+        Sản phẩm 4 & 0.25       & 0.4        & 0.2        & 0.375      \\
+        \hline
+    \end{tabular}
+    \par}
+
+\pagebreak
+\subsection*{Bước 3: Xây dựng ma trận đánh giá}
+Dựa trên ma trận S và ma trận đầu vào U, ta tính được ma trận R như sau:
+(Ví dụ ta tính đánh giá của người dùng A cho sản phẩm 3 là
+$R[1][3] = 5 \times 0.4 + 3 \times 0 + 0 \times 0.4 + 4 \times 0.2 = 2.8$)\\
+{\centering
+\begin{tabular}{ |c|c|c|c|c| }
+    \hline
+                 & Sản phẩm 1 & Sản phẩm 2 & Sản phẩm 3 & Sản phẩm 4 \\
+    \hline
+    Người dùng A & 3.25       & 3.8        & 2.8        & 3.5        \\
+    \hline
+    Người dùng B & 2.375      & 1.8        & 2.6        & 2.125      \\
+    \hline
+    Người dùng C & 2.5        & 0.8        & 3.2        & 1.5        \\
+    \hline
+    Người dùng D & 1.625      & 3.2        & 1.0        & 2.625      \\
+    \hline
+    Người dùng E & ?          & ?          & ?          & ?          \\
+    \hline
+\end{tabular}
+\par}
+\vspace{0.2cm}
+Người dùng E chưa đánh giá sản phẩm nào nên ta không thể tính được đánh giá của người đó.
+
+\subsection*{Kết luận}
+Dựa trên tính toán ở trên, dự đoán đánh giá của người dùng A cho Sản phẩm 3 là khoảng 2.8.
+Qua ví dụ minh họa này, chúng ta thấy rằng:
+\begin{itemize}
+    \item Thuật toán CF dựa trên Item giúp xác định mối quan hệ
+          giữa các sản phẩm dựa trên đánh giá của người dùng.
+    \item Việc tính toán độ tương đồng giữa các sản phẩm và sau đó
+          sử dụng nó để tính toán dự đoán đánh giá giúp cải thiện chất lượng gợi ý.
+    \item Thuật toán này có thể mở rộng để xử lý dữ liệu lớn bằng cách
+          sử dụng Hadoop MapReduce, giúp phân chia và xử lý dữ liệu song song,
+          tối ưu hóa hiệu suất và tốc độ xử lý.
+\end{itemize}

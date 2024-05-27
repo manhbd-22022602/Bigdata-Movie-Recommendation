@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.25)  27 MAY 2024 21:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.25)  27 MAY 2024 22:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -443,11 +443,11 @@ LaTeX Font Info:    ... okay on input line 15.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(56.9055pt, 500.484pt, 56.9055pt)
-* v-part:(T,H,B)=(28.45274pt, 738.0645pt, 28.45274pt)
+* v-part:(T,H,B)=(28.45274pt, 723.83812pt, 42.67912pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=500.484pt
-* \textheight=738.0645pt
+* \textheight=723.83812pt
 * \oddsidemargin=-15.36449pt
 * \evensidemargin=-15.36449pt
 * \topmargin=-80.81725pt
@@ -504,102 +504,94 @@ Package hyperref Info: Link coloring ON on input line 15.
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
- [1
+ (./chapters/beginning.tex [1
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./report.toc)
 \tf@toc=\write4
 \openout4 = `report.toc'.
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.107 \chapter
-              [TỔNG QUAN VỀ DỮ LIỆU LỚN] [2
+) (./chapters/chapter1.tex [3
 
 ]
 Ch\uhorn \ohorn ng 1.
-<images/BigData.jpg, id=129, 502.87875pt x 279.29344pt>
+<images/BigData.jpg, id=130, 502.87875pt x 279.29344pt>
 File: images/BigData.jpg Graphic file (type jpg)
 <use images/BigData.jpg>
-Package pdftex.def Info: images/BigData.jpg  used on input line 149.
+Package pdftex.def Info: images/BigData.jpg  used on input line 44.
 (pdftex.def)             Requested size: 227.62204pt x 126.41815pt.
-[3
+[4
 
  <./images/BigData.jpg>]
-<images/Hadoop1.jpg, id=135, 444.15938pt x 329.73187pt>
+<images/Hadoop1.jpg, id=136, 444.15938pt x 329.73187pt>
 File: images/Hadoop1.jpg Graphic file (type jpg)
 <use images/Hadoop1.jpg>
-Package pdftex.def Info: images/Hadoop1.jpg  used on input line 186.
+Package pdftex.def Info: images/Hadoop1.jpg  used on input line 81.
 (pdftex.def)             Requested size: 227.62204pt x 168.98111pt.
-<images/Hadoop2.jpg, id=136, 340.27126pt x 138.5175pt>
+<images/Hadoop2.jpg, id=137, 340.27126pt x 138.5175pt>
 File: images/Hadoop2.jpg Graphic file (type jpg)
 <use images/Hadoop2.jpg>
-Package pdftex.def Info: images/Hadoop2.jpg  used on input line 203.
+Package pdftex.def Info: images/Hadoop2.jpg  used on input line 98.
 (pdftex.def)             Requested size: 227.62204pt x 92.66039pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4 <./images/Hadoop1.jpg>]
-<images/MapReduce.png, id=142, 533.74406pt x 318.43968pt>
+ [5 <./images/Hadoop1.jpg>]
+<images/MapReduce.png, id=143, 533.74406pt x 318.43968pt>
 File: images/MapReduce.png Graphic file (type png)
 <use images/MapReduce.png>
-Package pdftex.def Info: images/MapReduce.png  used on input line 226.
+Package pdftex.def Info: images/MapReduce.png  used on input line 121.
 (pdftex.def)             Requested size: 284.52756pt x 169.75859pt.
- [5 <./images/Hadoop2.jpg> <./images/MapReduce.png>]
+) (./chapters/chapter2.tex [6 <./images/Hadoop2.jpg> <./images/MapReduce.png>]
 Ch\uhorn \ohorn ng 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
-[6
+[7
 
-] [7] [8]
+] [8]) (./chapters/chapter3.tex [9]
 Ch\uhorn \ohorn ng 3.
-<images/RecommenderSystem.png, id=180, 579.16376pt x 984.67876pt>
-File: images/RecommenderSystem.png Graphic file (type png)
-<use images/RecommenderSystem.png>
-Package pdftex.def Info: images/RecommenderSystem.png  used on input line 403.
-(pdftex.def)             Requested size: 170.71652pt x 290.2373pt.
-[9
+<images/RecommenderSystem.jpg, id=181, 296.10625pt x 783.92876pt>
+File: images/RecommenderSystem.jpg Graphic file (type jpg)
+<use images/RecommenderSystem.jpg>
+Package pdftex.def Info: images/RecommenderSystem.jpg  used on input line 20.
+(pdftex.def)             Requested size: 113.81102pt x 301.30513pt.
+[10
 
- <./images/RecommenderSystem.png>] [10] [11]
+ <./images/RecommenderSystem.jpg>] [11] [12]
 <images/Demo1.png, id=207, 900.36375pt x 408.02437pt>
 File: images/Demo1.png Graphic file (type png)
 <use images/Demo1.png>
-Package pdftex.def Info: images/Demo1.png  used on input line 544.
+Package pdftex.def Info: images/Demo1.png  used on input line 161.
 (pdftex.def)             Requested size: 341.43306pt x 154.72711pt.
 <images/Demo2.png, id=208, 253.69781pt x 379.4175pt>
 File: images/Demo2.png Graphic file (type png)
 <use images/Demo2.png>
-Package pdftex.def Info: images/Demo2.png  used on input line 552.
+Package pdftex.def Info: images/Demo2.png  used on input line 169.
 (pdftex.def)             Requested size: 170.71652pt x 255.31996pt.
-<images/Demo3.png, id=209, 1007.26312pt x 618.81187pt>
+ [13 <./images/Demo1.png> <./images/Demo2.png>]
+<images/Demo3.png, id=221, 1007.26312pt x 618.81187pt>
 File: images/Demo3.png Graphic file (type png)
 <use images/Demo3.png>
-Package pdftex.def Info: images/Demo3.png  used on input line 558.
+Package pdftex.def Info: images/Demo3.png  used on input line 176.
 (pdftex.def)             Requested size: 170.71652pt x 104.87558pt.
- [12 <./images/Demo1.png> <./images/Demo2.png>]
-<images/Demo4.png, id=223, 1117.92656pt x 490.08093pt>
+<images/Demo4.png, id=222, 1117.92656pt x 490.08093pt>
 File: images/Demo4.png Graphic file (type png)
 <use images/Demo4.png>
-Package pdftex.def Info: images/Demo4.png  used on input line 565.
+Package pdftex.def Info: images/Demo4.png  used on input line 182.
 (pdftex.def)             Requested size: 170.71652pt x 74.83257pt.
- [13 <./images/Demo3.png> <./images/Demo4.png>]
+) (./chapters/chapter4.tex [14 <./images/Demo3.png> <./images/Demo4.png>]
 Ch\uhorn \ohorn ng 4.
-LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 631.
-(c:/texlive/2024/texmf-dist/tex/latex/vntex/t5cmtt.fd
+) (./chapters/end.tex
+LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 20.
+ (c:/texlive/2024/texmf-dist/tex/latex/vntex/t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) [14
+) [15
 
-] [15] (./report.aux)
+]) [16] (./report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-05-08>
@@ -608,18 +600,18 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 1AF221E6F66ACFCF37F8E4183995307A;5197.
  ) 
 Here is how much of TeX's memory you used:
- 10695 strings out of 475910
- 161994 string characters out of 5789569
- 1946907 words of memory out of 5000000
- 32729 multiletter control sequences out of 15000+600000
+ 10744 strings out of 475910
+ 163169 string characters out of 5789569
+ 1943907 words of memory out of 5000000
+ 32759 multiletter control sequences out of 15000+600000
  572852 words of font info for 57 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  75i,12n,79p,632b,537s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <c:/Users/levie/.texlive2024/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/vntex/vnr/vnbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/vntex/vnr/vnti10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/vntex/vnr/vntt10.pfb>
-Output written on report.pdf (16 pages, 564761 bytes).
+Output written on report.pdf (16 pages, 582843 bytes).
 PDF statistics:
- 329 PDF objects out of 1000 (max. 8388607)
- 266 compressed objects within 3 object streams
- 73 named destinations out of 1000 (max. 500000)
+ 330 PDF objects out of 1000 (max. 8388607)
+ 268 compressed objects within 3 object streams
+ 74 named destinations out of 1000 (max. 500000)
  214 words of extra memory for PDF output out of 10000 (max. 10000000)
 
