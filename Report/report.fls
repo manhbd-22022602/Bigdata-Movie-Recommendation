@@ -210,11 +210,11 @@ INPUT ./chapters/chapter3.tex
 INPUT ./chapters/chapter3.tex
 INPUT ./chapters/chapter3.tex
 INPUT chapters/chapter3.tex
-INPUT ./images/RecommenderSystem.png
-INPUT ./images/RecommenderSystem.png
-INPUT ./images/RecommenderSystem.png
-INPUT ./images/RecommenderSystem.png
-INPUT ./images/RecommenderSystem.png
+INPUT ./images/RecommenderSystem.jpg
+INPUT ./images/RecommenderSystem.jpg
+INPUT ./images/RecommenderSystem.jpg
+INPUT ./images/RecommenderSystem.jpg
+INPUT ./images/RecommenderSystem.jpg
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/vntex/vnr/vnti10.tfm
 INPUT ./images/Demo1.png
 INPUT ./images/Demo1.png
