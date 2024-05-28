@@ -49,8 +49,13 @@ public class RecommendationListGenerator {
                 }
             }
 
+            Stack<Movie> stack = new Stack<Movie>();
+            
             while(!heap.isEmpty()) {
-                Movie movie = heap.poll();
+                stack.push(heap.poll());
+            }
+            while(!stack.isEmpty()) {
+                Movie movie = stack.pop();
                 context.write(key, new Text(movie.getMovieId() + ":" + movie.getRating()));
             }
         }
