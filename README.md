@@ -26,4 +26,10 @@ hadoop jar Recommender_Engine/recommender.jar Driver /data_path /dataDividedByUs
 
 # Copy output file to local
 hadoop fs -get / ~/Bigdata-Movie-Recommendation/output
-``` 
+```
+
+ ### Compiling
+ ```bash
+hadoop com.sun.tools.javac.Main *.java
+jar cf recommender.jar *.class
+```
