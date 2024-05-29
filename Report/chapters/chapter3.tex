@@ -54,13 +54,15 @@
               \item Xây dựng lớp Normalize
               \item Xây dựng lớp Multiplication
               \item Xây dựng lớp Sum
-              \item Xây dựng lớp RecommenderListGenerator
+              \item Xây dựng lớp RecommendationListGenerator
+              \item Xây dựng lớp RecommendationListName
+              \item Xây dựng lớp RecommendationName
           \end{itemize}
 \end{itemize}
 
 \subsection*{Bước 1: Xây dựng lớp DataDividerByUser}
 \begin{itemize}
-    \item \textbf{Xử lý}: Nhóm dữ liệu theo user \\
+    \item \textbf{Xử lý}: Nhóm movie và rating tương ứng theo user \\
     \item \textbf{Mapper}
           \begin{itemize}
               \item \textbf{Input}: user, movie, rating \\
@@ -90,7 +92,7 @@
 \subsection*{Bước 3: Xây dựng lớp Normalize}
 \begin{itemize}
     \item \textbf{Xử lý}: Chuẩn hóa từng đơn vị của ma trận đồng xuất hiện
-          bằng cách chia giá trị đó cho tổng của cột tương ứng trong ma trận
+          bằng cách chia giá trị đó cho tổng giá trị của cột tương ứng trong ma trận
     \item \textbf{Mapper}
           \begin{itemize}
               \item \textbf{Input}: movie1:movie2 \quad count \\
@@ -118,8 +120,7 @@
           \end{itemize}
     \item \textbf{Reducer}
           \begin{itemize}
-              \item \textbf{Input1}: key là movie1, value là movie2=relation \\
-              \item \textbf{Input2}: key là movie, value là user:rating \\
+              \item \textbf{Input}: key là movie, value là movie1=relation, movie2=relation, ..., userA:rating, userB:rating, ... \\
               \item \textbf{Output}: user:movie \quad result (với $result = relation \times rating$) \\
           \end{itemize}
 \end{itemize}
@@ -137,9 +138,9 @@
               \item \textbf{Output}: user:movie \quad sum (với sum là tổng các result) \\
           \end{itemize}
 \end{itemize}
-\subsection*{Bước 6: Xây dựng lớp RecommenderListGenerator}
+\subsection*{Bước 6: Xây dựng lớp RecommendationListGenerator}
 \begin{itemize}
-    \item \textbf{Xử lý}: Lấy ra 5 movie có giá trị sum lớn nhất với mỗi user được sắp xếp giảm dần
+    \item \textbf{Xử lý}: Lấy ra k movie có giá trị sum lớn nhất với mỗi user được sắp xếp giảm dần (ở đây chúng em lấy k=5)
     \item \textbf{Mapper}
           \begin{itemize}
               \item \textbf{Input}: user:movie \quad sum \\
@@ -149,6 +150,39 @@
           \begin{itemize}
               \item \textbf{Input}: key là user, value là movie:sum \\
               \item \textbf{Output}: user \quad movie:sum
+          \end{itemize}
+\end{itemize}
+\subsection*{Bước 7: Xây dựng lớp RecommendationListName}
+\begin{itemize}
+    \item \textbf{Xử lý}: Thay thế movie trong RecommendationListGenerator bằng tên movie tương ứng trong movie\_titles.txt
+    \item \textbf{RecommendationListMapper}
+          \begin{itemize}
+              \item \textbf{Input}: user \quad movie:sum \\
+              \item \textbf{Output}: key là movie, value là user=movie=sum \\
+          \end{itemize}
+    \item \textbf{TitlesMapper}
+          \begin{itemize}
+              \item \textbf{Input}: movie,name \\
+              \item \textbf{Output}: key là movie, value là movie:name \\
+          \end{itemize}
+    \item \textbf{Reducer}
+          \begin{itemize}
+              \item \textbf{Input}: key là movie, value là userA=movie1=sum, userB=movie2=sum, ..., movie1:name1, movie2:name2, ... \\
+              \item \textbf{Output}: user \quad name:sum\\
+          \end{itemize}
+\end{itemize}
+\subsection*{Bước 8: Xây dựng lớp RecommendationName}
+\begin{itemize}
+    \item \textbf{Xử lý}: Sắp xếp lại RecommendationListName theo userID tăng dần và sum giảm dần
+    \item \textbf{Mapper}
+          \begin{itemize}
+              \item \textbf{Input}: user \quad name:sum \\
+              \item \textbf{Output}: key là user, value là name:sum \\
+          \end{itemize}
+    \item \textbf{Reducer}
+          \begin{itemize}
+              \item \textbf{Input}: key là user, value là name:sum \\
+              \item \textbf{Output}: user \quad name \\
           \end{itemize}
 \end{itemize}
 
