@@ -1,5 +1,8 @@
 import java.io.IOException;
 import java.util.*;
+
+import javax.naming.Context;
+
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
@@ -48,9 +51,8 @@ public class RecommendationListGenerator {
                     }
                 }
             }
-
-            Stack<Movie> stack = new Stack<Movie>();
             
+            Stack<Movie> stack = new Stack<Movie>();
             while(!heap.isEmpty()) {
                 stack.push(heap.poll());
             }
