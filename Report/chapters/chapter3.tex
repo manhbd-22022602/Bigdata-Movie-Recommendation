@@ -1,7 +1,8 @@
 % Chapter 3
-\chapter[ỨNG DỤNG HADOOP MAPREDUCE VỚI ITEM-BASED COLLABORATIVE FILTERING TRONG RECOMMENDATION SYSTEM]
- {\LARGE ỨNG DỤNG HADOOP MAPREDUCE VỚI ITEM-BASED COLLABORATIVE FILTERING TRONG RECOMMENDATION SYSTEM}
 
+\chapter[ỨNG DỤNG HADOOP MAPREDUCE VỚI ITEM-BASED COLLABORATIVE FILTERING TRONG RECOMMENDATION SYSTEM]
+{\LARGE ỨNG DỤNG HADOOP MAPREDUCE VỚI ITEM-BASED COLLABORATIVE FILTERING TRONG RECOMMENDATION SYSTEM}
+\vspace{-1cm}
 % Section 1 Chapter 3
 \section{Ý tưởng MapReduce Item-based Collaborative Filtering}
 \textbf{Nhiệm vụ}: MapReduce chia quá trình tính toán thành các bước nhỏ hơn \\
@@ -17,7 +18,7 @@
 \vspace*{-1cm}
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=4cm]{images/RecommenderSystem.jpg}
+    \includegraphics[width=6cm]{images/RecommenderSystem.png}
     \caption{Lưu đồ thuật toán Mapreduce Item-based Collaborative Filtering}
 \end{figure}
 % Section 3 Chapter 3
@@ -198,23 +199,30 @@
 \subsection*{Demo Chương trình}
 \begin{enumerate}
     \item Cấu trúc thư mục của Project
-          \begin{figure}[h]
+          \begin{figure}[ht]
               \centering
-              \includegraphics[width=6cm]{images/Demo2.png}
+              \includegraphics[width=8cm]{images/Demo2.png}
               \caption{Cấu trúc thư mục của Project}
           \end{figure}
           \pagebreak
     \item Kết quả chương trình
           \begin{figure}[ht]
               \centering
-              \includegraphics[width=15cm]{images/Demo3.png}
+              \includegraphics[width=8.5cm]{images/Demo3.png}
               \caption{Kết quả chương trình}
           \end{figure}
     \item File kết quả đầu ra
           \begin{figure}[ht]
               \centering
-              \includegraphics[width=15cm]{images/Demo4.png}
+              \includegraphics[width=8.5cm]{images/Demo4.png}
               \caption{File kết quả đầu ra}
+          \end{figure}
+    \pagebreak
+    \item Jobtracker (Trong phiên bản mới của Hadoop, Jobtracker đã chuyển thành ResourceManager và ApplicationMaster)
+          \begin{figure}[ht]
+              \centering
+              \includegraphics[width=15cm]{images/ResourceManager.png}
+              \caption{Jobtracker}
           \end{figure}
     \item Đánh giá
           \begin{itemize}
