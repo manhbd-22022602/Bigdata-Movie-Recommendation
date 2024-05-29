@@ -9,8 +9,8 @@ Hệ thống bao gồm các bước xử lý dữ liệu sau:
 3. **Normalization**: Chuẩn hóa ma trận đồng xuất hiện.
 4. **Multiplication**: Nhân ma trận để tính điểm gợi ý cho từng cặp người dùng - bộ phim.
 5. **Summation**: Tổng hợp các điểm gợi ý.
-6. **Recommendation List Generation**: Tạo danh sách gợi ý phim cuối cùng cho người dùng.
-
+6. **Recommendation List Generation**: Tạo danh sách gợi ý phim theo movie_id cho người dùng.
+7. **Recommendation Name**: Tạo danh sách gợi ý tên phim từ movie_id
 ## How to Run
 
 ### Clone the project
@@ -23,7 +23,7 @@ cd Bigdata-Movie-Recommendation
 
 # Execute the Recommender Engine
 hadoop jar Recommender_Engine/recommender.jar Driver /data_path /dataDividedByUser /coOccurrenceMatrix /Normalize /Multiplication /Sum /RecommendationList
-
+hadoop jar Recommender_Engine/recommender.jar Driver /data_path /data_titles_path /dataDividedByUser /coOccurrenceMatrix /Normalize /Multiplication /Sum /RecommendationList /RecommendationListName /RecommendName
 # Copy output file to local
 hadoop fs -get / ~/Bigdata-Movie-Recommendation/output
 ```
