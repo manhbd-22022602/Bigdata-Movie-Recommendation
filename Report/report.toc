@@ -14,8 +14,9 @@
 \contentsline {section}{\numberline {3.2}Lưu đồ của thuật toán MapReduce Item-based Collaborative Filtering}{10}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Triển khai thuật toán MapReduce Item-based Collaborative Filtering}{11}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Demo thuật toán MapReduce Item-based Collaborative Filtering}{14}{section.3.4}%
-\contentsline {chapter}{\numberline {4}KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN}{16}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Kết luận}{16}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Hướng phát triển}{16}{section.4.2}%
-\contentsline {section}{\textbf {SẢN PHẨM CỦA NHÓM}}{16}{section*.22}%
-\contentsline {section}{\textbf {TÀI LIỆU THAM KHẢO}}{17}{section*.23}%
+\contentsline {chapter}{\numberline {4}KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Kết luận}{17}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Hướng phát triển}{17}{section.4.2}%
+\contentsline {section}{\textbf {SẢN PHẨM CỦA NHÓM}}{17}{section*.22}%
+\contentsline {section}{\textbf {TÀI LIỆU THAM KHẢO}}{18}{section*.23}%
+\contentsline {section}{\textbf {NHIỆM VỤ CỦA CÁC THÀNH VIÊN}}{18}{section*.24}%
