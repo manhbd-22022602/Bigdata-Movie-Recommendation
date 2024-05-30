@@ -3,7 +3,7 @@
 ## Description
 Bigdata-Movie-Recommendation là một hệ thống gợi ý phim được xây dựng bằng cách sử dụng Hadoop. Hệ thống này tận dụng các khả năng xử lý phân tán của Hadoop để tính toán và tạo ra danh sách gợi ý phim cho người dùng dựa trên các dữ liệu về hành vi xem phim của họ. 
 
-![Bigdata Architecture](https://github.com/manhbd-22022602/Bigdata-Movie-Recommendation/blob/main/Pictures-Diagrams/System_diagram.png)
+![Bigdata Architecture](https://github.com/manhbd-22022602/Bigdata-Movie-Recommendation/blob/main/Pictures-Diagrams/System_diagram.drawio.png)
 
 Hệ thống bao gồm các bước xử lý dữ liệu sau:
 1. **Data Division by User**: Chia dữ liệu thành từng phần theo người dùng.
